@@ -1,0 +1,13 @@
+﻿@page
+@model DeleteAccountModel
+@{
+    ViewData["Title"] = "Delete Account Page";
+}
+
+<h1>DELETE USER ACCOUNT</h1>
+
+<form method="POST">
+    <input asp-for="AccountToBeDeletedUsername" placeholder="Enter Username To Delete Account" />
+    <input asp-for="AccountToBeDeletedPassword" placeholder="Enter Username To Delete Account" />
+    <button type="submit">Delete</button>
+</form>

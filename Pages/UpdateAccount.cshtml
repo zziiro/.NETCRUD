@@ -1,0 +1,21 @@
+﻿@page
+@model UpdateAccountModel
+@{
+    ViewData["Title"] = "Update Account Page";
+}
+
+<form method="POST" asp-page-handler="UpdateUsername">
+    <input asp-for="OldUsername" placeholder="Old Username"/>
+    <input asp-for="UpdatedUsername" placeholder="New Username"/>
+    <p>To Update Username, Enter Your Password.</p>
+    <input asp-for="Password" placeholder="Password"/>
+    <button type="submit">Change Username</button>
+</form>
+
+<h1>------------------------</h1>
+
+<form method="POST" asp-page-handler="UpdatePassword">
+    <input asp-for="OldPassword" placeholder="Old Password"/>
+    <input asp-for="UpdatedPassword" placeholder="New Password"/>
+    <button type="submit">Change Password</button>
+</form>

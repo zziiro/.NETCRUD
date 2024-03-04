@@ -1,0 +1,35 @@
+﻿@page
+@model SearchModel
+@{
+    ViewData["Title"] = "Search Page";
+}
+
+<h1>Search for other Users!</h1>
+
+@if(TempData.ContainsKey("Alert Message"))
+ {
+    <div class="alert">
+        @TempData["AlertMessage"]
+    </div>
+ }
+
+<form method="POST" asp-page-handler="Search">
+    <input placeholder="SEARCH" asp-for="Username" />
+    <button type="submit">SEARCH</button>
+</form>
+
+<table>
+    <thread>
+        <tr>
+            <th><u>Search Results</u></th>
+        </tr>
+    </thread>
+    <tbody>
+        @foreach (var item in Model.searchResults)
+        {
+            <tr>
+                <td style="color:blue">@item</td>
+            </tr>
+        }
+    </tbody>
+</table>

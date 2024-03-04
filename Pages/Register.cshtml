@@ -1,0 +1,15 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register Page";
+}
+
+<div>
+    <form method="post">
+        <span>Register Form</span>
+        <input asp-for="Email" placeholder="EMAIL" />
+        <input asp-for="Username" placeholder="USERNAME" />
+        <input asp-for="Password" placeholder="PASSWORD" />
+        <button class="btn-primary" type="submit">Create Account</button>
+    </form>
+</div>

@@ -1,0 +1,27 @@
+﻿@page
+@model ReadModel
+@{
+    ViewData["Title"] = "Search Users Page";
+}
+
+<br />
+<h2>Serach for other Users!</h2>
+
+<br />
+
+<table>
+    <thread>
+        <tr>
+            <th><u>All Users</u></th>
+        </tr>
+    </thread>
+    <tbody>
+        @foreach(var item in Model.userList)
+        {
+                <tr>
+                    <td>@item</td>
+                </tr>
+        }
+    </tbody>
+</table>
+
