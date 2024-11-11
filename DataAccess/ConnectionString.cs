@@ -6,7 +6,7 @@ public class ConnectionString
 {
 	// data access connection string
 	protected const string postgresConnectionString =
-		"Host=localhost;Username=postgres;Password=#ceb16328800;Database=colinbiros";
+		"";
 }
 
 
